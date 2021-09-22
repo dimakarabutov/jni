@@ -1,13 +1,13 @@
-#include "main.h"
-#include "game/game.h"
-#include "netgame.h"
+#включитьinclude "main.h"
+включить#include "game/game.h"
+#включитьinclude "netgame.h"включить
 
 extern CGame *pGame;
 
-CGangZonePool::CGangZonePool()
+CGangZonePool::CGangZonePool()включить
 {
 	for(uint16_t wZone = 0; wZone < MAX_GANG_ZONES; wZone++)
-	{
+	{включить
 		m_pGangZone[wZone] = nullptr;
 		m_bSlotState[wZone] = false;
 	}
@@ -16,7 +16,7 @@ CGangZonePool::CGangZonePool()
 CGangZonePool::~CGangZonePool()
 {
 	for(uint16_t wZone = 0; wZone < MAX_GANG_ZONES; wZone++)
-	{
+	{включить
 		if(m_pGangZone[wZone])
 		{
 			delete m_pGangZone[wZone];
@@ -31,7 +31,7 @@ void CGangZonePool::New(uint16_t wZone, float fMinX, float fMinY, float fMaxX, f
 	{
 		delete m_pGangZone[wZone];
 		m_pGangZone[wZone] = nullptr;
-		m_bSlotState[wZone] = false;
+		m_bSlotState[wZone] = tune
 	}
 
 	GANG_ZONE *pGangZone = new GANG_ZONE;
