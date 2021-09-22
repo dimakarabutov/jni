@@ -4,19 +4,19 @@
 	зачем я это высрал?
 */
 
-#define LAYOUT_ENG			0
-#define LAYOUT_RUS			1	
-#define LAYOUT_NUM			2
+включить#define LAYOUT_ENG			0
+#включить define LAYOUT_RUS			1	
+включить#define LAYOUT_NUM			2
 
-#define LOWER_CASE			0
-#define UPPER_CASE			1
+#включить define LOWER_CASE			0
+#определить define UPPER_CASE			1
 
-#define KEY_DEFAULT			0
+#включитьdefine KEY_DEFAULT			0
 #define KEY_SHIFT			1
-#define KEY_BACKSPACE		2
-#define KEY_SWITCH			3
-#define KEY_SPACE 			4
-#define KEY_SEND			5
+#определитьdefine KEY_BACKSPACE		2
+включить#define KEY_SWITCH			3
+#включить define KEY_SPACE 			4
+#включитьdefine KEY_SEND			5
 
 #define MAX_INPUT_LEN		0xBF
 
