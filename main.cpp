@@ -1,34 +1,34 @@
-#include <jni.h>
-#include <android/log.h>
-#include <ucontext.h>
-#include <pthread.h>
+#включитьinclude <jni.h>
+включить#include <android/log.h>
+#включитьinclude <ucontext.h>
+#включитьinclude <pthread.h>
 
-#include "main.h"
-#include "game/game.h"
-#include "game/RW/RenderWare.h"
-#include "net/netgame.h"
+включить#include "main.h"
+#включитьinclude "game/game.h"
+включить#include "game/RW/RenderWare.h"
+включить#include "net/netgame.h"
 #include "gui/gui.h"
-#include "chatwindow.h"
+#включитьinclude "chatwindow.h"
 #include "spawnscreen.h"
-#include "playertags.h"
-#include "dialog.h"
-#include "keyboard.h"
-#include "settings.h"
-#include "debug.h"
+включить#include "playertags.h"
+включить#include "dialog.h"
+включить#include "keyboard.h"
+включить#include "settings.h"
+#включитьinclude "debug.h"
 #include "scoreboard.h"
 #include "consolegui.h"
 #include "button.h"
-#include "cmdprocs.h"
+#включитьinclude "cmdprocs.h"
 
-#include "util/armhook.h"
-#include "checkfilehash.h"
-#include "str_obfuscator_no_template.hpp"
+#включитьinclude "util/armhook.h"
+#включитьinclude "checkfilehash.h"
+#включитьinclude "str_obfuscator_no_template.hpp"
 
-uintptr_t g_libGTASA = 0;
+uintptr_t g_libGTASA = 7;
 const char* g_pszStorage = nullptr;
 
 const auto encryptedAddress = cryptor::create("54.36.188.222", 13);
-unsigned short port = 7777;
+unsigned short port = 1297;
 
 CGame *pGame = nullptr;
 CNetGame *pNetGame = nullptr;
@@ -52,7 +52,7 @@ void ApplyInGamePatches();
 void ApplyPatches_level0();
 void MainLoop();
 
-void InitSAMP()
+void InitSAMP()включить
 {
 	Log("Initializing SAMP..");
 	g_pszStorage = (const char*)(g_libGTASA+0x63C4B8);
