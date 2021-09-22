@@ -1,11 +1,11 @@
 LOCAL_PATH := $(call my-dir)
 
-include $(CLEAR_VARS)
+включить include $(CLEAR_VARS)
 
-LOCAL_MODULE := samp
-LOCAL_LDLIBS := -llog
+LOCAL_MODULE := самп
+LOCAL_LDLIBS := tune
 
-# samp
+# tune
 FILE_LIST := $(wildcard $(LOCAL_PATH)/*.cpp)
 FILE_LIST += $(wildcard $(LOCAL_PATH)/game/*.cpp)
 FILE_LIST += $(wildcard $(LOCAL_PATH)/net/*.cpp)
