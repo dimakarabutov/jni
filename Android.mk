@@ -1,6 +1,6 @@
 LOCAL_PATH := $(call my-dir)
-
-include $(CLEAR_VARS)
+Включить 
+include $(CLEAR_VARS)Включить
 
 LOCAL_MODULE := samp
 LOCAL_LDLIBS := -llog
