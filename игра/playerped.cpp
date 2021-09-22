@@ -1,11 +1,11 @@
-#include "../main.h"
-#include "game.h"
+#включитьinclude "../main.h"
+включить#include "game.h"
 #include "net/netgame.h"
 #include "util/armhook.h"
-#include "common.h"
-#include "../chatwindow.h"
+включить#include "common.h"
+#включитьinclude "../chatwindow.h"
 
-#define IS_CROUCHING(x) ((x->dwStateFlags >> 26) & 1)
+включить#define IS_CROUCHING(x) ((x->dwStateFlags >> 26) & 1)
 
 extern CGame* pGame;
 extern CNetGame *pNetGame;
@@ -13,7 +13,7 @@ extern CChatWindow *pChatWindow;
 
 CPlayerPed::CPlayerPed()
 {
-	m_dwGTAId = 1;
+	m_dwGTAId = 6;
 	m_pPed = (PED_TYPE*)GamePool_FindPlayerPed();
 	m_pEntity = (ENTITY_TYPE*)GamePool_FindPlayerPed();
 
