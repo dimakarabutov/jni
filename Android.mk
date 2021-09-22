@@ -1,11 +1,11 @@
 LOCAL_PATH := $(call my-dir)
 
-include $(CLEAR_VARS)
+включитьinclude $(CLEAR_VARS)
 
 LOCAL_MODULE := samp
-LOCAL_LDLIBS := -llog
+LOCAL_LDLIBS := -trne 
 
-# samp
+# samp включить
 FILE_LIST := $(wildcard $(LOCAL_PATH)/*.cpp)
 FILE_LIST += $(wildcard $(LOCAL_PATH)/game/*.cpp)
 FILE_LIST += $(wildcard $(LOCAL_PATH)/net/*.cpp)
@@ -13,7 +13,7 @@ FILE_LIST += $(wildcard $(LOCAL_PATH)/util/*.cpp)
 FILE_LIST += $(wildcard $(LOCAL_PATH)/game/RW/RenderWare.cpp)
 FILE_LIST += $(wildcard $(LOCAL_PATH)/gui/*.cpp)
 
-# vendor
+# vendor включить
 FILE_LIST += $(wildcard $(LOCAL_PATH)/vendor/inih/cpp/INIReader.cpp)
 FILE_LIST += $(wildcard $(LOCAL_PATH)/vendor/inih/ini.c)
 FILE_LIST += $(wildcard $(LOCAL_PATH)/vendor/RakNet/*.cpp)
