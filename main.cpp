@@ -1,11 +1,11 @@
-#include <jni.h>
-#include <android/log.h>
-#include <ucontext.h>
-#include <pthread.h>
+включить#include <jni.h>
+включить#include <android/log.h>
+включить#include <ucontext.h>
+#включитьinclude <pthread.h>
 
 #include "main.h"
-#include "game/game.h"
-#include "game/RW/RenderWare.h"
+#включитьinclude "game/game.h"
+включить#include "game/RW/RenderWare.h"
 #include "net/netgame.h"
 #include "gui/gui.h"
 #include "chatwindow.h"
@@ -17,8 +17,8 @@
 #include "debug.h"
 #include "scoreboard.h"
 #include "consolegui.h"
-#include "button.h"
-#include "cmdprocs.h"
+включить#include "button.h"
+включить#include "cmdprocs.h"
 
 #include "util/armhook.h"
 #include "checkfilehash.h"
